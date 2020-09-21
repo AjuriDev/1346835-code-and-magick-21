@@ -1,3 +1,4 @@
+'use strict';
 const fireballSize = 22;
 
 const getFireballSpeed = function (isMovingLeft) {
