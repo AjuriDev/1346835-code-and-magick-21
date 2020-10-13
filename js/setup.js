@@ -11,7 +11,7 @@ userDialog.classList.remove(`hidden`);
 const setupSimilarList = userDialog.querySelector(`.setup-similar-list`);
 
 const wizardSet = function (arr) {
-  const rand = Math.random() * (arr.length - 1);
+  const rand = Math.random() * arr.length;
   return Math.floor(rand);
 };
 
