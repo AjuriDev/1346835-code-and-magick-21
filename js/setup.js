@@ -11,15 +11,15 @@ userDialog.classList.remove(`hidden`);
 const setupSimilarList = userDialog.querySelector(`.setup-similar-list`);
 
 const wizardSet = function (arr) {
-  let rand = Math.random() * (arr.length - 1);
+  const rand = Math.random() * (arr.length - 1);
   return Math.floor(rand);
 };
 
-function Wizard() {
+const Wizard = function () {
   this.name = WIZARDS_NAMES[wizardSet(WIZARDS_NAMES)] + ` ` + WIZARDS_SURNAMES[wizardSet(WIZARDS_SURNAMES)];
   this.coatColor = WIZARDS_COAT_COLORS[wizardSet(WIZARDS_COAT_COLORS)];
   this.eyesColor = WIZARDS_EYES_COLORS[wizardSet(WIZARDS_EYES_COLORS)];
-}
+};
 
 const wizards = [];
 for (let i = 0; i < WIZARDS_NUMBER; i++) {
